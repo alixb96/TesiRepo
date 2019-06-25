@@ -1,0 +1,1309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="texpant/xsl" href="provaluni1.xsl"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Calndario di <placeName ana="grote_diocese">Luni</placeName></title>
+                <respStmt>
+                    <resp>Conversione TEI P5 a cura di</resp>
+                    <name>Alice Baroni</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Università di Pisa</publisher>
+                <date>2019-02-07</date>
+                <availability status="restricted">
+                    <p>Contattare il responsabile del progetto, vietata la riproduzione.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+               
+                <msDesc>
+                    
+                    <msIdentifier>
+                        <settlement> </settlement>
+                        <repository></repository>
+                        <msName> </msName>
+                    </msIdentifier>
+                    
+                 <msContents>
+                     
+                     <msItem>
+                         <textLang></textLang>
+                         <colophon></colophon>
+                     </msItem>
+                 </msContents> 
+                    
+                    <physDesc>
+                        <handDesc><handNote>
+                            
+                        </handNote> </handDesc>
+                    </physDesc>
+                   
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <charDecl>
+
+                <!-- lettere particolari -->
+
+                <!-- pp -->
+                <char xml:id="ppgli" ana="allograph"
+                    resp="https://bora.uib.no/handle/1956/10699" source="p.79">
+                    <charName>LATIN SMALL LIGATURE PP</charName>
+                    <mapping type="unicode_codepoint" subtype="PUA-1">EED6</mapping>
+                    <mapping type="unicode_codepoint" subtype="unicode_symbol"></mapping>
+                    <!-- not found -->
+                </char>
+
+                <!-- h con punto sopra -->
+                <glyph corresp="#hpuntosopra" xml:id="hpuntosopra" ana="allograph"
+                    resp="https://bora.uib.no/handle/1956/10699" source="p.46">
+                    <glyphName>LATIN CAPITAL LETTER H WITH DOT ABOVE</glyphName>
+                    <mapping type="unicode_codepoint" subtype="LatExtAdd">1E23</mapping>
+                    <mapping type="unicode_codepoint" subtype="unicode_symbol">ḣ</mapping>
+                </glyph>
+
+                <!-- et -->
+                <glyph corresp="#etgli" xml:id="etgli" ana="allograph"
+                    resp="https://bora.uib.no/handle/1956/10699" source="p.133">
+                    <glyphName>LATIN ABBREVIATION SIGN CAPITAL ET</glyphName>
+                    <mapping type="unicode_codepoint" subtype="PUA-4">F142</mapping>
+                    <mapping type="unicode_codepoint" subtype="unicode_symbol"></mapping>
+                    <!-- not found -->
+                </glyph>
+
+                <!-- con -->
+                <glyph corresp="#congli" xml:id="congli" ana="allograph"
+                    resp="https://bora.uib.no/handle/1956/10699" source="p.29">
+                    <glyphName>LATIN ABBREVIATION SIGN SMALL CON</glyphName>
+                    <mapping type="unicode_codepoint" subtype="NumbFo">2184</mapping>
+                    <mapping type="unicode_codepoint" subtype="unicode_symbol">ↄ</mapping>
+                    <!-- not found -->
+                </glyph>
+
+                <!-- s lunga -->
+                <char corresp="#slunga" xml:id="slunga" ana="allograph"
+                    resp="https://bora.uib.no/handle/1956/10699" source="p.89">
+                    <charName>LATIN SMALL LETTER LONG S</charName>
+                    <mapping type="unicode_codepoint" subtype="LatExtA">017F</mapping>
+                    <mapping type="unicode_codepoint" subtype="unicode_symbol">ſ</mapping>
+                </char>
+
+                <!-- m uncinata -->
+                <glyph corresp="#munci" xml:id="munci" ana="allograph"
+                    resp="https://bora.uib.no/handle/1956/10699" source="p.63">
+                    <glyphName>LATIN SMALL LETTER LONG S</glyphName>
+                    <mapping type="unicode_codepoint" subtype="PUA-var">F23D</mapping>
+                    <mapping type="unicode_codepoint" subtype="unicode_symbol"/>
+                    <!-- not found -->
+                </glyph>
+
+                <!-- m uncinata maiuscola -->
+                <glyph corresp="#Muncigr" xml:id="Muncigr" ana="allograph"
+                    resp="https://bora.uib.no/handle/1956/10699" source="p.63">
+                    <glyphName>LATIN CAPITAL LETTER M UNCIAL FORM WITH RIGHT DESCENDER</glyphName>
+                    <mapping type="unicode_codepoint" subtype="PUA-var">F224</mapping>
+                    <mapping type="unicode_codepoint" subtype="unicode_symbol"/>
+                    <!-- not found -->
+                </glyph>
+
+                <!-- r -rum -->
+                <glyph corresp="#rum" xml:id="rum" ana="allograph"
+                    resp="https://bora.uib.no/handle/1956/10699" source="p.135">
+                    <glyphName>LATIN SMALL LETTER RUM ROTUNDA</glyphName>
+                    <mapping type="unicode_codepoint" subtype="LatExtD">A75D</mapping>
+                    <mapping type="unicode_codepoint" subtype="unicode_symbol">ꝝ</mapping>
+                    <!-- not found -->
+                </glyph>
+
+                <!-- bb -->
+                <glyph corresp="#b" xml:id="b" ana="allograph"
+                    resp="https://bora.uib.no/handle/1956/10699" source="p.26">
+                    <glyphName>LATIN SMALL LIGATURE BB</glyphName>
+                    <mapping type="unicode_codepoint" subtype="PUA-1">EEC2</mapping>
+                    <mapping type="unicode_codepoint" subtype="unicode_symbol">ꝝ</mapping>
+                    <!-- not found -->
+                </glyph>
+
+                <!-- h con linea sopra -->
+                <glyph corresp="#hlinea" xml:id="hlinea" ana="allograph"
+                    resp="https://bora.uib.no/handle/1956/10699" source="p.26">
+                    <glyphName>LATIN SMALL LETTER H WITH MEDIUM-HIGH OVERLINE (ACROSS
+                        ASCENDER)</glyphName>
+                    <mapping type="unicode_codepoint" subtype="PUA-15">E517</mapping>
+                    <mapping type="unicode_codepoint" subtype="unicode_symbol"></mapping>
+                    <!-- not found -->
+                </glyph>
+
+                <!-- d capovolta -->
+                <glyph corresp="#dcapovolta" xml:id="dcapovolta" ana="allograph"
+                    resp="https://bora.uib.no/handle/1956/10699" source="p.31">
+                    <glyphName>LATIN SMALL LETTER INSULAR D</glyphName>
+                    <mapping type="unicode_codepoint" subtype="LatExtD">A77A</mapping>
+                    <mapping type="unicode_codepoint" subtype="unicode_symbol">ꝺ</mapping>
+                    <!-- not found -->
+                </glyph>
+
+                <!-- r acuta -->
+                <glyph corresp="#racuta" xml:id="racuta" ana="allograph"
+                    resp="https://bora.uib.no/handle/1956/10699" source="p.84">
+                    <glyphName>LATIN SMALL LETTER R WITH ACUTE</glyphName>
+                    <mapping type="unicode_codepoint" subtype="LatExtD-A">0155</mapping>
+                    <mapping type="unicode_codepoint" subtype="unicode_symbol">ŕ</mapping>
+                </glyph>
+
+                <!-- H maiuscola rotonda -->
+                <glyph corresp="#hmaiurot" xml:id="hmaiurot" ana="allograph"
+                    resp="https://bora.uib.no/handle/1956/10699" source="p.47">
+                    <glyphName>LATIN CAPITAL LETTER UNCIAL H</glyphName>
+                    <mapping type="unicode_codepoint" subtype="PUA-var">F110</mapping>
+                    <mapping type="unicode_codepoint" subtype="unicode_symbol"></mapping>
+                    <!-- not found -->
+                </glyph>
+
+                <!-- r rotonda -->
+                <glyph corresp="#rrotonda" xml:id="rrotonda" ana="allograph"
+                    resp="https://bora.uib.no/handle/1956/10699" source="p.84">
+                    <glyphName>LATIN SMALL LETTER R ROTUND</glyphName>
+                    <mapping type="unicode_codepoint" subtype="LatExtD">A75B</mapping>
+                    <mapping type="unicode_codepoint" subtype="unicode_symbol">ꝛ</mapping>
+                    <!-- not found -->
+                </glyph>
+
+                <!-- m rotonda acuta -->
+                <glyph corresp="#m_rotondaacu" xml:id="m_rotondaacu" ana="allograph"
+                    resp="https://bora.uib.no/handle/1956/10699" source="p.63">
+                    <glyphName>LATIN SMALL LETTER M UNCIAL FORM WITH ACUTE</glyphName>
+                    <mapping type="unicode_codepoint" subtype="PUA-16">F23E</mapping>
+                    <mapping type="unicode_codepoint" subtype="unicode_symbol"/>
+                    <!-- not found -->
+                </glyph>
+
+                <!-- e ricciolo verticale -->
+                <glyph corresp="#e_ricciolo" xml:id="e_ricciolo" ana="allograph"
+                    resp="https://bora.uib.no/handle/1956/10699" source="p.33">
+                    <glyphName>LATIN SMALL LETTER E WITH CURL</glyphName>
+                    <mapping type="unicode_codepoint" subtype="PUA-21">E4E9</mapping>
+                    <mapping type="unicode_codepoint" subtype="unicode_symbol"></mapping>
+                    <!-- not found -->
+                </glyph>
+
+                <!-- u ricciolo verticale -->
+                <glyph corresp="#u_ricciolo" xml:id="u_ricciolo" ana="allograph"
+                    resp="https://bora.uib.no/handle/1956/10699" source="p.94">
+                    <glyphName>LATIN SMALL LETTER E WITH CURL</glyphName>
+                    <mapping type="unicode_codepoint" subtype="PUA-21">E731</mapping>
+                    <mapping type="unicode_codepoint" subtype="unicode_symbol"></mapping>
+                    <!-- not found -->
+                </glyph>
+
+                <!--  gr -->
+                <glyph corresp="#gr" xml:id="gr" ana="allograph"
+                    resp="https://bora.uib.no/handle/1956/10699" source="p.43">
+                    <glyphName>LATIN SMALL LIGATURE GR</glyphName>
+                    <mapping type="unicode_codepoint" subtype="PUA-1">EAD0</mapping>
+                    <mapping type="unicode_codepoint" subtype="unicode_symbol"></mapping>
+                    <!-- not found -->
+                </glyph>
+
+                <!--  p linea sopra -->
+                <glyph corresp="#plinea" xml:id="plinea" ana="allograph"
+                    resp="https://bora.uib.no/handle/1956/10699" source="p.79">
+                    <glyphName>LATIN SMALL LETTER P WITH MACRON</glyphName>
+                    <mapping type="unicode_codepoint" subtype="PUA-15">E665</mapping>
+                    <mapping type="unicode_codepoint" subtype="unicode_symbol"></mapping>
+                    <!-- not found -->
+                </glyph>
+
+                <!--  elemento nuovo -->
+                <glyph xml:id="nuovo" ana="abbreviation sign">
+                    <glyphName>nuovo elemento</glyphName>
+                    <mapping type="normalize">l</mapping>
+
+                </glyph>
+
+
+
+
+                <!-- segni abbreviazione -->
+
+                <!-- tilde sopra -->
+                <glyph xml:id="combtilde" ana="abbreviation sign"
+                    resp="https://bora.uib.no/handle/1956/10699" source="p.127">
+                    <glyphName>COMBINING TILDE</glyphName>
+                    <mapping type="unicode_codepoint" subtype="CombDiaMk">0303</mapping>
+                    <mapping type="unicode_codepoint" subtype="unicode_symbol">̃</mapping>
+                </glyph>
+
+                <!-- segno sinsito sopra -->
+                <glyph xml:id="combsegnsx" ana="abbreviation sign"
+                    resp="https://bora.uib.no/handle/1956/10699">
+                    <!--source="p.79"-->
+                    <glyphName>COMBINING ABBREVIATION MARK ZIGZAG ABOVE CURLY FORM</glyphName>
+                    <mapping type="unicode_codepoint" subtype="PUA-6">F1C5</mapping>
+                    <mapping type="unicode_codepoint" subtype="unicode_symbol"></mapping>
+                </glyph>
+
+                <!-- tilde verticale -->
+                <glyph xml:id="tildeverti" ana="abbreviation sign"
+                    resp="https://bora.uib.no/handle/1956/10699" source="p.129">
+                    <glyphName>COMBINING VERTICAL TILDE</glyphName>
+                    <mapping type="unicode_codepoint" subtype="CombDiaMk">033E</mapping>
+                    <mapping type="unicode_codepoint" subtype="unicode_symbol">◌̾</mapping>
+                </glyph>
+
+                <!-- segno verticale destro -->
+                <glyph xml:id="segnovertdx" ana="abbreviation sign"
+                    resp="https://bora.uib.no/handle/1956/10699" source="p.130">
+                    <glyphName>COMBINING COMMA ABOVE RIGHT </glyphName>
+                    <mapping type="unicode_codepoint" subtype="CombDiaMk">0315</mapping>
+                    <mapping type="unicode_codepoint" subtype="unicode_symbol">̕</mapping>
+                </glyph>
+
+                <!-- due punti -->
+                <glyph xml:id="duepunti" ana="abbreviation sign"
+                    resp="https://bora.uib.no/handle/1956/10699" source="p.140">
+                    <glyphName>COLON </glyphName>
+                    <mapping type="unicode_codepoint" subtype="BasLat">003A</mapping>
+                    <mapping type="unicode_codepoint" subtype="unicode_symbol">:</mapping>
+                </glyph>
+
+            </charDecl>
+        </encodingDesc>
+        
+        <!-- descrizione mani -->
+        <profileDesc>
+            <handNotes>
+                <handNote xml:id="H1" scribeRef="#alteramanu" medium="black-ink">
+                    scritta in corsivo con caratteri differenti dal testo
+                </handNote>
+            </handNotes>
+            <handNotes>
+                <handNote xml:id="H2" scribeRef="#alteramanu" medium="black-ink">
+                    scritta in corsivo con caratteri differenti dal testo
+                </handNote>
+            </handNotes>
+            <handNotes>
+                <handNote xml:id="sameHand" scribeRef="#sameScribe" medium="green-ink">
+                    caratteri identici al testo
+                </handNote>
+            </handNotes>
+            <handNotes>
+                <handNote xml:id="H3" scribeRef="#alteramanu" medium="black-ink">
+                    scritta in corsivo con caratteri differenti dal testo
+                </handNote>
+            </handNotes>
+            <handNotes>
+                <handNote xml:id="H4" scribeRef="#alteramanu" medium="black-ink">
+                    scritta in stampatello minuscolo corsivo, caratteri differenti dal testo
+                </handNote>
+            </handNotes>
+            <handNotes>
+                <handNote xml:id="H5" scribeRef="#alteramanu" medium="black-ink">
+                    caratteri identici dal testo
+                </handNote>
+            </handNotes>
+            <handNotes>
+                <handNote xml:id="H6" scribeRef="#alteramanu" medium="black-ink">
+                    scritta in corsivo con caratteri differenti dal testo
+                </handNote>
+            </handNotes>
+        </profileDesc>
+    </teiHeader>
+
+    <facsimile>
+        <surface start="#luni_001r">
+            <graphic mimeType="image/jpeg" url="001r.png" xml:id="IMAGE.1"/>
+        </surface>
+
+        <surface start="#luni_001v">
+            <graphic mimeType="image/jpeg" url="001v.png" xml:id="IMAGE.2"/>
+        </surface>
+    </facsimile>
+
+
+
+    <text>
+        <body>
+
+            <head><placeName ana="grote_diocese"/></head>
+
+            <!--INIZIO MESE-->
+            <div type="calendar_month" ana="Gennaio">
+                <!-- milestone and Grafic for facsimile and pagebreak  -->
+                <!-- month table -->
+                <pb n="001r" xml:id="luni_001r"/>
+
+
+                <!--intestazione del mese-->
+                <head type="intestazione">
+                    <hi style="" ana="initial" rend="iniziale-inchiostrata">KL</hi>
+                    <hi rend="red">
+                        <choice>
+                            <orig><abbr>Ian<am><g ref="#combsegnsx"/></am></abbr></orig>
+                            <reg><expan>Ian<ex>uarius</ex></expan></reg>
+                        </choice>
+                        <choice>
+                            <abbr>h<am><g ref="#hpuntosopra"/></am>t</abbr>
+                            <expan>h<ex>abe</ex>t</expan>
+                        </choice> dies XXXI
+                        <choice>
+                            <orig>.</orig>
+                            <reg>,</reg>
+                        </choice>
+                        <choice>
+                            <abbr>lun<am><g ref="#combsegnsx"/></am></abbr>
+                            <expan>lun<ex>a</ex></expan>
+                                <supplied reason="aggiuntaeditoriale"><pc>.</pc></supplied>
+                        </choice>
+                        <choice>
+                            <abbr>v<am><g ref="#segnovertdx"/></am>o.</abbr>
+                            <expan>v<ex>er</ex>o</expan>
+                                 <supplied>.</supplied>
+                        </choice> 
+                        XXX <supplied><pc>.</pc></supplied> Nox 
+                        <choice>
+                            <abbr>h<am><g ref="#hpuntosopra"/></am>t</abbr>
+                            <expan>h<ex>abe</ex>t</expan>
+                        </choice> 
+                        horas <damage type="scolorito">XVI</damage>
+                        <choice>
+                        <orig>.</orig><reg>,</reg> 
+                        </choice>    
+                            dies 
+                        <choice>
+                            <abbr><damage type="scolorito">v<am><g ref="#segnovertdx"/></am>o</damage></abbr>
+                            <expan>v<ex>er</ex>o</expan>
+                        </choice> 
+                        <orig>.</orig>
+                        VIII
+                        <reg>.</reg>
+                    </hi>
+                </head>
+
+                <!-- day 1 -->
+
+                <div type="day" ana="grote_feast">
+                    <!-- Layout typisiert mithilfe Fachvokabular  -->
+                    <div type="Intervalles">
+                        <ab type="sistemaattuale"><date when="--01-01" ana="dbpedia-owl_feastDay">1</date></ab>
+                        <ab type="faselunare" rend="red">III</ab>
+                        <ab type="lettere" rend="red">A</ab>
+                        <ab type="calende" part="I" rend="red">
+                            <choice>
+                                <abbr>Ian<am><g ref=""/></am></abbr>
+                                <expan>Ian<ex>uarii</ex></expan>
+                            </choice>
+                            <orig>.</orig>
+                        </ab>
+                        <!-- value of part I/M/F initial / middle / final -->
+                    </div>
+                    <div type="textcalendar">
+                        <!--voce del calendario?-->
+                        <ab type="testo"> 
+                            
+                                <hi rend="red">
+                                    
+                                    <name ana="grote_saint"
+                                        ref="http://gams.uni-graz.at/ontology/grotefend/circumcisiodomini" type="feast" key="circdni">
+                                    <choice>
+                                        <abbr>Circu<am><g ref="#combtilde"/></am>cis<am>i<g ref="#combtilde"/></am>o</abbr>
+                                        <expan>Circu<ex>m</ex>cisio</expan>
+                                    </choice>
+                                    <choice>
+                                        <abbr>Dn<am><g ref="#combtilde"/></am>i</abbr>
+                                        <expan>D<ex>omi</ex>ni</expan>
+                                    </choice>
+                                       <reg>,</reg>
+                                   </name>    
+                                </hi> 
+                                       <reg>,</reg>
+                            
+                             <name ana="grote_saint"
+                                 ref="http://gams.uni-graz.at/ontology/grotefend/basiliimagni_epcf http://bhlms.fltr.ucl.ac.be/Nquerysaintrubrique.cfm?code_dossier=Basilius%26rubrique=Basilius%20ep%2E%20Caesareae">
+                                    Ba<g ref="#slunga">s</g>ilii 
+                             </name>
+                               <abbr><am><g ref="#etgli">et</g></am></abbr>
+                            <name ana="grote_saint"
+                                ref="http://gams.uni-graz.at/ontology/grotefend/martine_vm"> 
+                                Marine 
+                                <choice>
+                                    <abbr>V</abbr>
+                                    <expan>v<ex>irginis</ex></expan>
+                                </choice>
+                                <orig>,</orig>
+                                <choice>
+                                <abbr><am><g ref="#etgli"></g></am></abbr>
+                                <expan>et</expan>    
+                                </choice>    
+                                <choice>
+                                    <abbr><g ref="#m_rotondaacu">m</g><am><g ref="#tildeverti"/></am></abbr>
+                                    <expan>m<ex>artiris</ex></expan>
+                                </choice>
+                                <reg>.</reg>
+                            </name>
+                        </ab>
+                    </div>
+
+                </div>
+
+                <!-- day 2 -->
+
+                <div type="day" ana="grote_feast">
+                    <div type="Intervalles">
+                        <ab type="dataoggi"><date when="--01-02" ana="dbpedia-owl_feastDay">2</date></ab>
+                        <ab type="faselunare"/>
+                        <ab type="lettere">B</ab>
+                        <ab type="calende" part="I" rend="red">IIII</ab>
+                        <!-- value of part I/M/F initial / middle / final -->
+                    </div>
+                    <div type="textcalendar">
+                        <!--voce del calendario?-->
+                        <ab>
+                            <name ana="grote_saint"
+                                ref="http://gams.uni-graz.at/ontology/grotefend/stephani_protom">
+                                <hi rend="red">
+                                    <choice>
+                                        <abbr>Oct<am><g ref="#combtilde"/></am></abbr>
+                                        <expan>Oct<ex>ava</ex></expan>
+                                    </choice>
+                                    <choice>
+                                        <abbr>sc<am><g ref="#slunga"/>i</am></abbr>
+                                        <expan>s<ex>an</ex>c<ex>t</ex>i</expan>
+                                    </choice>
+                                    <g ref="#slunga">S</g>tephani<reg>.</reg>
+                                </hi>
+                            </name>
+                        </ab>
+                    </div>
+                </div>
+
+                <!-- day 3 -->
+
+                <div type="day" ana="grote_feast">
+                    <div type="Intervalles">
+                        
+                        <ab><ptr target="#gennaio1"/>
+                        <seg type="faselunare" rend="red">XI</seg>
+                        <seg type="lettere">C</seg>
+                        <seg type="calende" part="I" rend="red">III</seg>
+                        <!-- value of part I/M/F initial / middle / final -->
+                        </ab>
+                    </div>
+                    <div type="textcalendar">
+                        <!--voce del calendario?-->
+                        <ab>
+                            <name ana="grote_saint"
+                                ref="http://gams.uni-graz.at/ontology/grotefend/johannis_apev">
+                                <hi rend="red">
+                                    <choice>
+                                        <abbr>Oct<am><g ref="#combtilde"/></am></abbr>
+                                        <expan>Oct<ex>ava</ex></expan>
+                                    </choice>
+                                    <choice>
+                                        <abbr><g ref="#slunga">s</g>c<am><g ref="#combtilde"/></am>i</abbr>
+                                        <expan>s<ex>an</ex>c<ex>t</ex>i</expan>
+                                    </choice>
+                                    <choice>
+                                        <abbr>Ioh<am><g ref="#hlinea"/></am>is</abbr>
+                                        <expan>Ioh<ex>ann</ex>is</expan>
+                                    </choice>
+                                    <choice>
+                                        <abbr>Ev<g ref="#combtilde"/>ag<g ref="#gr"/></abbr>
+                                        <expan>Evang<ex>eliste</ex></expan>
+                                    </choice>
+                                    <supplied>.</supplied>
+                                </hi>
+                            </name>
+                        </ab>
+                    </div>
+                </div>
+
+                <!-- day 4 -->
+
+                <div type="day" ana="grote_feast">
+                    <div type="Intervalles">
+                        <ab type="dataoggi"><date when="--01-04" ana="dbpedia-owl_feastDay">4</date></ab>
+                        <ab type="faselunare"/>
+                        <ab type="lettere">D</ab>
+                        <ab type="calende" part="I" rend="red">II</ab>
+                        <!-- value of part I/M/F initial / middle / final -->
+                    </div>
+                    <div type="textcalendar">
+                        <!--voce del calendario?-->
+                        <ab>
+                            <name ana="grote_saint"
+                                ref="http://gams.uni-graz.at/ontology/grotefend/innocentum_m">
+                                <hi rend="red">
+                                    <choice>
+                                        <abbr>Oct<am><g ref="#combsegnsx"/></am>a</abbr>
+                                        <expan>Octava</expan>
+                                    </choice>
+                                    <choice>
+                                        <abbr>Inno<damage type="scolorito">ce<am><g ref="#combtilde"/></am></damage>tum</abbr>
+                                        <expan>Innoce<ex>n</ex>tum</expan>
+                                    </choice>
+                                    <reg>.</reg>
+                                </hi>
+                            </name>
+                        </ab>
+                    </div>
+                </div>
+
+                <!-- day 5 -->
+
+                <div type="day" ana="grote_feast">
+                    <div type="Intervalles">
+                        <ab type="dataoggi"><date when="--01-05" ana="dbpedia-owl_feastDay">5</date></ab>
+                        <ab type="faselunare"><hi rend="red"><damage>XIX</damage></hi></ab>
+                        <ab type="lettere">E</ab>
+                        <ab type="calende" part="I" rend="red">
+                            <choice>
+                                <sic>
+                                    <choice>
+                                        <abbr>i<g ref="#dcapovolta">d</g>us.</abbr>
+                                        <expan>idus</expan>
+                                    </choice>
+                                </sic>
+                                <corr resp="salvatori" cert="high">Nonas</corr> 
+                            </choice>
+                            <note><p>ciao</p></note>
+                        </ab>
+                        <!-- value of part I/M/F initial / middle / final -->
+                    </div>
+                    <div type="textcalendar">
+                        <!--voce del calendario?-->
+                        <ab>
+                        </ab>
+                    </div>
+                </div>
+
+                <!-- day 6 -->
+
+                <div type="day" ana="grote_feast">
+                    <div type="Intervalles">
+                        <ab type="dataoggi"><date when="--01-06" ana="dbpedia-owl_feastDay">6</date></ab>
+                        <ab type="faselunare"><hi rend="red"><damage type="scolorito">VIII</damage></hi></ab>
+                        <ab type="lettere">F</ab>
+                        <ab type="calende" part="I"><hi rend="red">VIII</hi></ab>
+                        <!-- value of part I/M/F initial / middle / final -->
+                    </div>
+                    <div type="textcalendar">
+                        <!--voce del calendario?-->
+                        <ab>
+                            <name ana="grote_saint" ref="http://gams.uni-graz.at/ontology/grotefend/jesu_dominiepiphania">
+                                <hi rend="red">
+                                    <choice>
+                                        <abbr>Eph<am><g ref="#hlinea"/></am>ia</abbr>
+                                        <expan>Ep<ex>ip</ex>h<ex>an</ex>ia</expan>
+                                    </choice>
+                                    <choice>
+                                        <abbr>Dni</abbr>
+                                        <expan>D<ex>omi</ex>ni</expan>
+                                    </choice>
+                                    <reg>.</reg>
+                                </hi>
+                            </name>
+                        </ab>
+                    </div>
+                </div>
+
+                <!-- day 7 -->
+
+                <div type="day" ana="grote_feast">
+                    <div type="Intervalles">
+                        <ab type="dataoggi"><date when="--01-07" ana="dbpedia-owl_feastDay">7</date></ab>
+                        <ab type="faselunare"/>
+                        <ab type="lettere">G</ab>
+                        <ab type="calende" part="I"><hi rend="red">VII </hi></ab>
+                        <!-- value of part I/M/F initial / middle / final -->
+                    </div>
+                    <div type="textcalendar">
+                        <!--voce del calendario?-->
+                        <ab> </ab>
+                    </div>
+                </div>
+
+                <!-- day 8 -->
+
+                <div type="day" ana="grote_feast">
+                    <div type="Intervalles">
+                        <ab type="dataoggi"><date when="--01-08" ana="dbpedia-owl_feastDay">8</date></ab>
+                        <ab type="faselunare" rend="red"><damage type="scolorito">XVI</damage></ab>
+                        <ab type="lettere">A</ab>
+                        <ab type="calende" part="I" rend="red">VI</ab>
+                        <!-- value of part I/M/F initial / middle / final -->
+                    </div>
+                    <div type="textcalendar">
+                        <!--voce del calendario?-->
+                        <ab> </ab>
+                    </div>
+                </div>
+
+                <!-- day 9 -->
+
+                <div type="day" ana="grote_feast">
+                    <div type="Intervalles">
+                        <ab type="dataoggi"><date when="--01-09" ana="dbpedia-owl_feastDay">9</date></ab>
+                        <ab type="faselunare" rend="red"><damage type="scolorito">V</damage></ab>
+                        <ab type="lettere">B</ab>
+                        <ab type="calende" part="I" rend="red"><g ref="">V</g></ab>
+                        <!-- value of part I/M/F initial / middle / final -->
+                    </div>
+                    <div type="textcalendar">
+                        <!--voce del calendario?-->
+                        <ab> </ab>
+                    </div>
+                </div>
+
+                <!-- day 10 -->
+
+                <div type="day" ana="grote_feast">
+                    <div type="Intervalles">
+                        <ab type="dataoggi"><date when="--01-10" ana="dbpedia-owl_feastDay">10</date></ab>
+                        <ab type="faselunare"/>
+                        <ab type="lettere">C</ab>
+                        <ab type="calende" part="I" rend="red"><damage type="scolorito">IIII</damage></ab>
+                        <!-- value of part I/M/F initial / middle / final -->
+                    </div>
+                    <div type="textcalendar">
+                        <!--voce del calendario?-->
+                        <ab><name ana="grote_saint"
+                                ref="http://gams.uni-graz.at/ontology/grotefend/pauliprimieremite_cf"> 
+                                Pauli
+                               <choice>
+                                    <abbr>p<am><g ref="#tildeverti"/></am>mi</abbr>
+                                    <expan>p<ex>ri</ex>mi</expan>
+                                </choice> eremitte<reg>.</reg>
+                            </name>
+                        </ab>
+                    </div>
+                </div>
+
+                <!-- day 11 -->
+
+                <div type="day" ana="grote_feast">
+                    <div type="Intervalles">
+                        <ab type="dataoggi"><date when="--01-11" ana="dbpedia-owl_feastDay">11</date></ab>
+                        <ab type="faselunare"><hi rend="red">XIII</hi></ab>
+                        <ab type="lettere">D</ab>
+                        <ab type="calende" part="I"><hi rend="red">III</hi></ab>
+                        <!-- value of part I/M/F initial / middle / final -->
+                    </div>
+                    <div type="textcalendar">
+                        <!--voce del calendario?-->
+                        <ab>
+                            <name ana="grote_saint"
+                                ref="http://gams.uni-graz.at/ontology/grotefend/iginii_ppm"> 
+                                Yginii 
+                                <choice>
+                                    <abbr>pp<am><g ref="#ppgli"/><g ref="#combtilde"/></am></abbr>
+                                    <expan>p<ex>a</ex>p<ex>e</ex></expan>
+                                </choice>
+                                <abbr><am><g ref="#etgli">et</g></am></abbr>
+                                <choice>
+                                    <abbr>mr<am><g ref="#racuta"/></am></abbr>
+                                    <expan>m<ex>a</ex>r<ex>tiris</ex></expan>
+                                </choice>
+                                <reg>.</reg>
+                            </name>
+                        </ab>
+                    </div>
+                </div>
+
+                <!-- day 12 -->
+
+                <div type="day" ana="grote_feast">
+                    <div type="Intervalles">
+                        <ab type="dataoggi"><date when="--01-12" ana="dbpedia-owl_feastDay">12</date></ab>
+                        <ab type="faselunare" rend="red">II</ab>
+                        <ab type="lettere">E</ab>
+                        <ab type="calende" part="I" rend="red">II</ab>
+                        <!-- value of part I/M/F initial / middle / final -->
+                    </div>
+                    <div type="textcalendar">
+                        <!--voce del calendario?-->
+                        <ab> </ab>
+                    </div>
+                </div>
+
+                <!-- day 13 -->
+
+                <div type="day" ana="grote_feast">
+                    <div type="Intervalles">
+                        <ab type="dataoggi"><date when="--01-13" ana="dbpedia-owl_feastDay">13</date></ab>
+                        <ab type="faselunare"/>
+                        <ab type="lettere">F</ab>
+                        <ab type="calende" part="I" rend="red">
+                            <choice>
+                                <sic>
+                                    <choice>
+                                        <abbr>K<g ref="">l</g></abbr>
+                                        <expan>K<ex>a</ex>l<ex>endas</ex></expan>
+                                    </choice>
+                                </sic>
+                                <corr>Nonus</corr>
+                            </choice>
+                        </ab>
+                        <!-- value of part I/M/F initial / middle / final -->
+                    </div>
+                    <div type="textcalendar">
+                        <!--voce del calendario?-->
+                        <ab>
+                            <name ana="grote_saint" ref="http://gams.uni-graz.at/ontology/grotefend/jesu_dominiepiphania">
+                                <hi rend="red">
+                                    <choice>
+                                        <abbr>Oct<am><g ref="#combtilde"/></am></abbr>
+                                        <expan>Oct<ex>ava</ex></expan>
+                                    </choice>
+                                    <choice>
+                                        <abbr>Ep<am>h<g ref="#hlinea"/></am>ye</abbr>
+                                        <expan>Ep<ex>ip</ex>h<ex>an</ex>ye</expan>
+                                    </choice>
+                                    <reg>.</reg>
+                                </hi>
+                            </name>
+                            <name ana="grote_saint"
+                                ref="http://gams.uni-graz.at/ontology/grotefend/hilarii_epcf_pictavien">
+                                <g ref="#hmaiurot">H</g>ylarii 
+                            </name>
+                            <abbr><am><g ref="etgli">et</g></am></abbr>
+                            <name ana="grote_saint"
+                                ref="http://gams.uni-graz.at/ontology/grotefend/remigii_epcf_remen">
+                                Remigii 
+                                <choice>
+                                    <abbr>Epo<am><g ref="#combtilde"/></am><am><g ref="#rum">r</g></am></abbr>
+                                    <expan>e<ex>pisco</ex>po<ex>rum</ex></expan>
+                                </choice>
+                                <reg>.</reg> 
+                            </name>
+                        </ab>
+                    </div>
+                </div>
+
+                <!-- day 14 -->
+
+                <div type="day" ana="grote_feast">
+                    <div type="Intervalles">
+                        <ab type="dataoggi"><date when="--01-14" ana="dbpedia-owl_feastDay">14</date></ab>
+                        <ab type="faselunare" rend="red">X</ab>
+                        <ab type="lettere">G</ab>
+                        <ab type="calende" part="I" rend="red">XIX</ab>
+                        <!-- value of part I/M/F initial / middle / final -->
+                    </div>
+                    <div type="textcalendar">
+                        <!--voce del calendario?-->
+                        <ab>
+                            <name ana="grote_saint"
+                                ref="http://gams.uni-graz.at/ontology/grotefend/felicis_pb_nolani">
+                                Felicis 
+                                <choice>
+                                    <abbr>pb<am><g ref="#rrotonda">r</g></am><am><g ref="#combtilde"/></am>i</abbr>
+                                    <expan>p<ex>res</ex>b<ex>iter</ex>i</expan>
+                                </choice>
+                                <abbr><am><g ref="#etgli">et</g></am></abbr>
+                                <choice>
+                                    <abbr><am><g ref="">c</g></am>f<am><g ref="#segnovertdx"/></am></abbr>
+                                    <expan><ex>con</ex>f<ex>essoris</ex></expan>
+                                </choice>
+                                <reg>.</reg>
+                            </name>
+                        </ab>
+                    </div>
+                </div>
+
+                <!-- day 15 -->
+
+                <div type="day" ana="grote_feast">
+                    <div type="Intervalles">
+                        <ab type="dataoggi"><date when="--01-15" ana="dbpedia-owl_feastDay">15</date></ab>
+                        <ab type="faselunare"/>
+                        <ab type="lettere">A</ab>
+                        <ab type="calende" part="I" rend="red">XVIII</ab>
+                        <!-- value of part I/M/F initial / middle / final -->
+                    </div>
+                    <div type="textcalendar">
+                        <!--voce del calendario?-->
+                        <ab>
+                            <name ana="grote_saint"
+                                ref="http://gams.uni-graz.at/ontology/grotefend/mauri_abbcf"> 
+                                Mauri abbatis 
+                                <abbr><am><g ref="#etgli">et</g></am></abbr>
+                                <choice>
+                                    <abbr><am><g ref="#congli">c</g></am>f<am><g ref="#segnovertdx"/></am></abbr>
+                                    <expan><ex>con</ex>f<ex>essoris</ex></expan>
+                                </choice>
+                                <reg>.</reg>
+                            </name>
+                        </ab>
+                    </div>
+                </div>
+
+
+                <!-- day 16 -->
+
+                <div type="day" ana="grote_feast">
+                    <div type="Intervalles">
+                        <ab type="dataoggi"><date when="--01-16" ana="dbpedia-owl_feastDay">16</date></ab>
+                        <ab type="faselunare" rend="red">XVIII</ab>
+                        <ab type="lettere">B</ab>
+                        <ab type="calende" part="I" rend="red">XVII</ab>
+                        <!-- value of part I/M/F initial / middle / final -->
+                    </div>
+                    <div type="textcalendar">
+                        <!--voce del calendario?-->
+                        <ab>
+                            <name ana="grote_saint"
+                                ref="http://gams.uni-graz.at/ontology/grotefend/marcelli_ppm">
+                                Marcelli 
+                                <choice>
+                                    <abbr>pp<am><g ref="#ppgli"/><g ref="#combtilde"/></am></abbr>
+                                    <expan>p<ex>a</ex>p<ex>e</ex></expan>
+                                </choice>
+                                <abbr><am><g ref="#etglif">et</g></am></abbr>
+                                <choice>
+                                    <abbr>mar<am><g ref="#tildeverti"/></am></abbr>
+                                    <expan>mar<ex>tiris</ex></expan>
+                                </choice>
+                                <reg>.</reg>
+                            </name>
+                        </ab>
+                    </div>
+                </div>
+
+                <!-- start 2nd pages -->
+                <pb n="001v" xml:id="luni_001v"/>
+
+                <!-- day 17 -->
+                <pb/>
+                <div type="day" ana="grote_feast">
+                    <div type="Intervalles">
+                        <ab type="dataoggi"><date when="--01-17" ana="dbpedia-owl_feastDay">17</date></ab>
+                        <ab type="faselunare" rend="red">VII</ab>
+                        <ab type="lettere">C</ab>
+                        <ab type="calende" part="I" rend="red">XVI</ab>
+                        <!-- value of part I/M/F initial / middle / final -->
+                    </div>
+                    <div type="textcalendar">
+                        <!--voce del calendario?-->
+                        <ab>
+                            <name ana="grote_saint"
+                                ref="http://gams.uni-graz.at/ontology/grotefend/antonii_abbcf">
+                                Anthoni 
+                                <choice>
+                                    <abbr>abb<am><g ref="#b"/></am><g ref=""/>tis</abbr>
+                                    <expan>abb<ex>a</ex>tis</expan>
+                                </choice>
+                                <reg>.</reg>
+                            </name>
+                        </ab>
+                    </div>
+                </div>
+
+                <!-- day 18 -->
+
+                <div type="day" ana="grote_feast">
+                    <div type="Intervalles">
+                        <ab type="dataoggi"><date when="--01-18" ana="dbpedia-owl_feastDay">18</date></ab>
+                        <ab type="faselunare"/>
+                        <ab type="lettere">D</ab>
+                        <ab type="calende" part="I" rend="red">XV</ab>
+                        <!-- value of part I/M/F initial / middle / final -->
+                    </div>
+                    <div type="textcalendar">
+                        <!--voce del calendario?-->
+                        <ab>
+                            <name ana="grote_saint"
+                                ref="http://gams.uni-graz.at/ontology/grotefend/prisce_vm"> 
+                                Pri<g ref="#slunga">s</g>ce 
+                                <choice>
+                                    <abbr>virg<am><g ref="#tildeverti"/></am></abbr>
+                                    <expan>virg<ex>inis</ex></expan>
+                                 </choice>
+                                <reg>.</reg>
+                            </name>
+                        </ab>
+                    </div>
+                </div>
+
+                <!-- day 19 -->
+
+                <div type="day" ana="grote_feast">
+                    <div type="Intervalles">
+                        <ab type="dataoggi"><date when="--01-19" ana="dbpedia-owl_feastDay">19</date></ab>
+                        <ab type="faselunare" rend="red">XV</ab>
+                        <ab type="lettere">E</ab>
+                        <ab type="calende" part="I" rend="red">XIIII</ab>
+                        <!-- value of part I/M/F initial / middle / final -->
+                    </div>
+                    <div type="textcalendar">
+                        <!--voce del calendario?-->
+                        <ab>
+                            <name ana="grote_saint"
+                                ref="http://gams.uni-graz.at/ontology/grotefend/mariietmartheaudifaxethabakuk_m">
+                                Marii 
+                                <choice>
+                                    <orig>.</orig><reg>,</reg>
+                                </choice>
+                                Marthe 
+                                <choice>
+                                    <orig>.</orig><reg>,</reg>
+                                </choice>
+                                Audifax
+                                <choice>
+                                    <orig>.</orig><reg>,</reg>
+                                </choice>
+                               <abbr><am><g ref="#etgli">et</g></am></abbr> 
+                                Abacuc<orig>.</orig> 
+                                <choice>
+                                    <abbr>m<am><g ref="#rum">r</g></am></abbr>
+                                    <expan>m<ex>a</ex>r<ex>tirum</ex></expan>
+                                </choice>
+                                <reg>.</reg>
+                            </name>
+                        </ab>
+                    </div>
+                </div>
+
+                <!-- day 20 -->
+
+                <div type="day" ana="grote_feast">
+                    <div type="Intervalles">
+                        <ab type="dataoggi"><date when="--01-20" ana="dbpedia-owl_feastDay">20</date></ab>
+                        <ab type="faselunare" rend="red">IIII</ab>
+                        <ab type="lettere">F</ab>
+                        <ab type="calende" part="I" rend="red">XIII</ab>
+                        <!-- value of part I/M/F initial / middle / final -->
+                    </div>
+                    <div type="textcalendar">
+                        <!--voce del calendario?-->
+                        <ab>
+                            <name ana="grote_saint"
+                                ref="http://gams.uni-graz.at/ontology/grotefend/fabianietsebastiani_ppm">
+                                Fabiani <abbr><am><g ref="#etgli">et</g></am></abbr>
+                                <g ref="slunga">S</g>ebastiani 
+                                <choice>
+                                    <abbr>pp<am><g ref="#ppgli"/><g ref="#combtilde"/></am>.</abbr>
+                                    <expan>p<ex>a</ex>p<ex>e</ex></expan>
+                                </choice>
+                                <orig>.</orig>
+                                <abbr><am><g ref="#etgli">et</g></am></abbr>
+                                <choice>
+                                    <abbr><am><g ref="">m</g></am></abbr>
+                                    <expan>m<ex>artirum</ex></expan>
+                                </choice>
+                                <reg>.</reg>
+                            </name>
+                        </ab>
+                    </div>
+                </div>
+
+                <!-- day 21 -->
+
+                <div type="day" ana="grote_feast">
+                    <div type="Intervalles">
+                        <ab type="dataoggi"><date when="--01-21" ana="dbpedia-owl_feastDay">21</date></ab>
+                        <ab type="faselunare"/>
+                        <ab type="lettere">G</ab>
+                        <ab type="calende" part="I" rend="red">XII</ab>
+                        <!-- value of part I/M/F initial / middle / final -->
+                    </div>
+                    <div type="textcalendar">
+                        <!--voce del calendario?-->
+                        <ab>
+                            <name ana="grote_saint"
+                                ref="http://gams.uni-graz.at/ontology/grotefend/agnetis_vm">
+                                Agnetis<orig>.</orig>
+                                <choice>
+                                    <abbr>vir<am><g ref="#gr">g</g><g ref="#tildeverti"/></am></abbr>
+                                    <expan>virg<ex>inis</ex></expan>
+                                </choice>
+                                <abbr><am><g ref="#etglif">et</g></am></abbr>
+                                <choice>
+                                    <abbr><am><g ref="#m_rotondaacu">m</g></am></abbr>
+                                    <expan>m<ex>artiris</ex></expan>
+                                </choice>
+                                <reg>.</reg>
+                            </name>
+                        </ab>
+                    </div>
+                </div>
+
+                <!-- day 22 -->
+
+                <div type="day" ana="grote_feast">
+                    <div type="Intervalles">
+                        <ab type="dataoggi"><date when="--01-22" ana="dbpedia-owl_feastDay">22</date></ab>
+                        <ab type="faselunare" rend="red">XII</ab>
+                        <ab type="lettere">A</ab>
+                        <ab type="calende" part="I" rend="red">XI</ab>
+                        <!-- value of part I/M/F initial / middle / final -->
+                    </div>
+                    <div type="textcalendar">
+                        <!--voce del calendario?-->
+                        <ab>
+                            <name ana="grote_saint"
+                                ref="http://gams.uni-graz.at/ontology/grotefend/vincentii_levitem">
+                                <choice>
+                                    <abbr>Vinc<am><g ref=""/></am>ecii</abbr>
+                                    <expan>Vince<ex>n</ex>cii</expan>
+                                </choice>
+                            </name>
+                            <abbr><am><g ref="etgli">et</g></am></abbr>
+                            <name ana="grote_saint"
+                                ref="http://gams.uni-graz.at/ontology/grotefend/anastasii_m_1">
+                                Ana<g ref="#slunga">s</g>ta<g ref="#slunga">s</g>ii 
+                                <choice>
+                                    <abbr>
+                                      <am><g ref="#m_rotondaacu">m</g></am><am><g ref="#rum">r</g></am></abbr>
+                                      <expan>m<ex>a</ex>r<ex>tirum</ex></expan>
+                                </choice>
+                                <reg>.</reg>
+                            </name>
+                        </ab>
+                    </div>
+                </div>
+
+                <!-- day 23 -->
+
+                <div type="day" ana="grote_feast">
+                    <div type="Intervalles">
+                        <ab type="dataoggi"><date when="--01-23" ana="dbpedia-owl_feastDay">23</date></ab>
+                        <ab type="faselunare" rend="red">I</ab>
+                        <ab type="lettere">b</ab>
+                        <ab type="calende" part="I" rend="red">X</ab>
+                        <!-- value of part I/M/F initial / middle / final -->
+                    </div>
+                    <div type="textcalendar">
+                        <!--voce del calendario?-->
+                        <ab>
+                            <name ana="grote_saint"
+                                ref="http://gams.uni-graz.at/ontology/grotefend/emerentiane_vm">
+                                <choice>
+                                    <abbr>Emer<am><g ref="#e_ricciolo">e</g></am>ciane</abbr>
+                                    <expan>Emere<ex>n</ex>ciane</expan>
+                                </choice>
+                                <orig>.</orig>
+                                <choice>
+                                    <abbr>vir<am><g ref="#gr">g</g><g ref="#tildeverti"/></am></abbr>
+                                    <expan>virg<ex>inis</ex></expan>
+                                    <reg>.</reg>
+                                </choice>
+                            </name>
+                        </ab>
+                    </div>
+                </div>
+
+                <!-- day 24 -->
+
+                <div type="day" ana="grote_feast">
+                    <div type="Intervalles">
+                        <ab type="dataoggi"><date when="--01-24" ana="dbpedia-owl_feastDay">24</date></ab>
+                        <ab type="faselunare"/>
+                        <ab type="lettere">C</ab>
+                        <ab type="calende" part="I" rend="red">IX</ab>
+                        <!-- value of part I/M/F initial / middle / final -->
+                    </div>
+                    <div type="textcalendar">
+                        <!--voce del calendario?-->
+                        <ab> </ab>
+                    </div>
+                </div>
+
+                <!-- day 25 -->
+
+                <div type="day" ana="grote_feast">
+                    <div type="Intervalles">
+                        <ab type="dataoggi"><date when="--01-25" ana="dbpedia-owl_feastDay">25</date></ab>
+                        <ab type="faselunare" rend="red">IX</ab>
+                        <ab type="lettere">D</ab>
+                        <ab type="calende" part="I" rend="red">VIII</ab>
+                        <!-- value of part I/M/F initial / middle / final -->
+                    </div>
+                    <div type="textcalendar">
+                        <!--voce del calendario?-->
+                        <ab>
+                            <hi rend="red">
+                                <name ana="grote_saint"
+                                    ref="http://gams.uni-graz.at/ontology/grotefend/pauli_apconver">
+                                    <choice>
+                                        <abbr>Conv<am><g ref="#u_ricciolo"/></am><g ref="#slunga">s</g>io</abbr>
+                                        <expan>Conv<ex>er</ex>sio</expan>
+                                    </choice>
+                                    <choice>
+                                        <abbr>sc<am><g ref="#tildeverti"/></am>i</abbr>
+                                        <expan><g ref="#slunga">s</g><ex>an</ex>c<ex>t</ex>i</expan>
+                                    </choice> Pauli<reg>.</reg>
+                                </name>
+                            </hi>
+                        </ab>
+                    </div>
+                </div>
+
+                <!-- day 26 -->
+
+                <div type="day" ana="grote_feast">
+                    <div type="Intervalles">
+                        <ab type="dataoggi"><date when="--01-26" ana="dbpedia-owl_feastDay">26</date></ab>
+                        <ab type="faselunare"/>
+                        <ab type="lettere">E</ab>
+                        <ab type="calende" part="I" rend="red">VII</ab>
+                        <!-- value of part I/M/F initial / middle / final -->
+                    </div>
+                    <div type="textcalendar">
+                        <!--voce del calendario?-->
+                        <ab> </ab>
+                    </div>
+                </div>
+
+                <!-- day 27 -->
+
+                <div type="day" ana="grote_feast">
+                    <div type="Intervalles">
+                        <ab type="dataoggi"><date when="--01-27" ana="dbpedia-owl_feastDay">27</date></ab>
+                        <ab type="faselunare" rend="red">XVII</ab>
+                        <ab type="lettere">F</ab>
+                        <ab type="calende" part="I" rend="red">VI</ab>
+                        <!-- value of part I/M/F initial / middle / final -->
+                    </div>
+                    <div type="textcalendar">
+                        <!--voce del calendario?-->
+                        <ab>
+                            <name ana="grote_saint">
+                                <!-- found in BHL -->
+                                <choice>
+                                    <abbr>Io<g ref="#hlinea">h</g>is</abbr>
+                                    <expan>Ioh<ex>ann</ex>is</expan>
+                                </choice> Gri<g ref="#slunga">s</g>o<g ref="#slunga">s</g>tomi<!-- controlla trasc punto sopra i -->
+                                <reg>.</reg>
+                            </name>
+                            <reg>.</reg>
+                            <name ana="grote_saint"
+                                ref="http://gams.uni-graz.at/ontology/grotefend/juliani_m_3">
+                                <add hand="#H1" place="inline-left">
+                                    <choice>
+                                        <abbr>sci</abbr>
+                                        <expan>s<ex>an</ex>c<ex>t</ex>i</expan>
+                                    </choice> Iulianii
+                                    <choice>
+                                        <abbr><am><g ref="">c</g></am>ffess<g ref="#ssgif"/></abbr>
+                                        <expan>co<ex>n</ex>ffess<ex>oris</ex></expan>
+                                        <reg>.</reg>
+                                    </choice>
+                                    <!-- tag <handNote> -->
+                                </add>
+                            </name>
+                        </ab>
+                    </div>
+                </div>
+
+
+                <!-- day 28 -->
+
+                <div type="day" ana="grote_feast">
+                    <div type="Intervalles">
+                        <ab type="dataoggi"><date when="--01-28" ana="dbpedia-owl_feastDay">28</date></ab>
+                        <ab type="faselunare" rend="red">VI</ab>
+                        <ab type="lettere">G</ab>
+                        <ab type="calende" part="I">V</ab>
+                        <!-- value of part I/M/F initial / middle / final -->
+                    </div>
+                    <div type="textcalendar">
+                        <!--voce del calendario?-->
+                        <ab>
+                            <name ana="grote_saint"
+                                ref="http://gams.uni-graz.at/ontology/grotefend/agnetis_vm">
+                                Agnetis 
+                                <choice>
+                                    <abbr><g ref="#slunga">s</g>c<g ref="#dcapovolta">d</g><am><g
+                                                ref=""/></am>o</abbr>
+                                    <expan>s<ex>e</ex>c<ex>un</ex>do</expan>
+                                </choice>
+                                <reg>.</reg>
+                            </name>
+                        </ab>
+                    </div>
+                </div>
+
+
+                <!-- day 29 -->
+
+                <div type="day" ana="grote_feast">
+                    <div type="Intervalles">
+                        <ab type="dataoggi"><date when="--01-29" ana="dbpedia-owl_feastDay">29</date></ab>
+                        <ab type="faselunare"/>
+                        <ab type="lettere">A</ab>
+                        <ab type="calende" part="I" rend="red">IIII</ab>
+                        <!-- value of part I/M/F initial / middle / final -->
+                    </div>
+                    <div type="textcalendar">
+                        <!--voce del calendario?-->
+                        <ab> </ab>
+                    </div>
+                </div>
+
+                <!-- day 30 -->
+
+                <div type="day" ana="grote_feast">
+                    <div type="Intervalles">
+                        <ab type="dataoggi"><date when="--01-30" ana="dbpedia-owl_feastDay">30</date></ab>
+                        <ab type="faselunare" rend="red">XIIII</ab>
+                        <ab type="lettere">B</ab>
+                        <ab type="calende" part="I" rend="red">III</ab>
+                        <!-- value of part I/M/F initial / middle / final -->
+                    </div>
+                    <div type="textcalendar">
+                        <!--voce del calendario?-->
+                        <ab> </ab>
+                    </div>
+                </div>
+
+                <!-- day 31 -->
+
+                <div type="day" ana="grote_feast">
+                    <div type="Intervalles">
+                        <ab type="dataoggi"><date when="--01-31" ana="dbpedia-owl_feastDay">31</date></ab>
+                        <ab type="faselunare" rend="red">III</ab>
+                        <ab type="lettere">C</ab>
+                        <ab type="calende" part="I" rend="red">II</ab>
+                        <!-- value of part I/M/F initial / middle / final -->
+                    </div>
+                    <div type="textcalendar">
+                        <!--voce del calendario?-->
+                        <ab>
+                            <name ana="grote_saint"
+                                ref="http://gams.uni-graz.at/ontology/grotefend/geminiani_epcf_mutinen"> 
+                                Geminiani 
+                                <choice>
+                                    <abbr>ep<am><g ref="#combtilde"/></am>i</abbr>
+                                    <expan>ep<ex>iscop</ex>i</expan>
+                                </choice>
+                                <abbr><am><g ref="#etgli">et</g></am></abbr>
+                                <choice>
+                                    <abbr><am><g ref="#congli">c</g></am>f<am><g ref="#segnovertdx"/></am></abbr>
+                                    <expan><ex>con</ex>f<ex>essoris</ex></expan>
+                                </choice>
+                                <reg>.</reg>
+                            </name>
+                        </ab>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--  end of month-->
+
+
+        </body>
+        <back><div type="notes">
+            <note type="currentdate" xml:id="gennaio1">
+                <ab type="dataoggi"><date when="--01-03" ana="dbpedia-owl_feastDay">3</date></ab>
+            </note>
+        </div></back>
+    </text>
+</TEI>
